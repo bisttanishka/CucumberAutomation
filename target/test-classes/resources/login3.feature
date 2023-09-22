@@ -18,12 +18,22 @@
 #Sample Feature Definition Template
 
 Feature: User Login
-  Scenario Outline: Successful Login for Amazon
-    Given the user is on the login page of amazon
-    When the user enters valid <username> and <passowrd>
-    And clicks the submit button
-    Then they should be logged in thorugh amazon
-    And redirected to the home page
+Background:
+Given the user is on the login page of Naukri
+  Scenario Outline: Successful Login for Naukri
+    When the user give credentails valid <id> and <passowrd>
+    And clicks the login button
+    Then they should be logged in thorugh Naukri
+    And redirected to the home page of naukri
     Examples:
-    |username| |passowrd|
+    |id| |passowrd|
+    |"jeet" |  |"xyz"|
+    
+    
+  Scenario Outline: Successful Login for Naukri2
+    When the user enter valid <id> and <roll>
+    And clicks the sign button
+    
+    Examples:
+    |id| |roll|
     |"jeet" |  |"xyz"|

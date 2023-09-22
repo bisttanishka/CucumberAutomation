@@ -6,12 +6,15 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = {"D:\\AutomationLearning eclispe\\Cucumber\\src\\test\\java\\resources"}, // Location of your feature files
+    features = {"D:\\AutomationLearning eclispe\\Cucumber\\src\\test\\java\\resources\\login4.feature"}, // Location of your feature files
     glue = {"stepdefinition"},      // Package where your step definitions are located
     plugin = {"pretty", "html:target/cucumber-reports"},
     // Specify the format and location of the test reports
     dryRun = false,
-    monochrome = true
+    monochrome = true,
+    tags = "@Regression and @smoke"
+  //  tags = "@sanity"
+    //we can use and and or also to run the specific tests from out feature file
     
 )
 public class TestRunner {

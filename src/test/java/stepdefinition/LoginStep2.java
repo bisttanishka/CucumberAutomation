@@ -21,7 +21,7 @@ public class LoginStep2 {
 	}
 
 	@Then("they should be logged in thorugh amazon")
-	public void they_should_be_logged_in_thorugh_amazon() {
+	public void they_should_be_logged_in_thorugh_amazon() { 
 	
 	}
 
