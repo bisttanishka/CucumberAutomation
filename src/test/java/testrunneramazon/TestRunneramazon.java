@@ -11,7 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 		glue = { "stepdefinationAmazon" }, // Package where your step definitions are located
 		plugin = { "pretty", "html:target/cucumber-reports" }, 
 		monochrome = true, 
-		tags ="@Sanity or @Smoke"
+		tags ="@Regression" /* if we have to run two senario with sanity and smoke then use OR and if
+		                           we have given Sanity and Smoke name to one secenior the use And*/
 
 )
 
